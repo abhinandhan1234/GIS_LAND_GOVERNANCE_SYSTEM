@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Haliyal Smart Land Records</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="/static/static.css">
+</head>
+<body>
+  <aside>
+    <h1>Haliyal Land Records</h1>
+    <p class="subtitle">Synthetic cadastral data explorer</p>
+    <label>Land type<select id="landType"><option value="">All land types</option><option>Agricultural</option><option>Commercial</option><option>Residential</option><option>Government</option></select></label>
+    <label>Tax status<select id="taxStatus"><option value="">All tax statuses</option><option>Paid</option><option>Pending</option><option>Overdue</option></select></label>
+    <button id="apply">Apply filters</button>
+    <section><h2>Overview</h2><div id="summary">Loading records...</div></section>
+    <section><h2>Selected parcel</h2><div id="details">Click a parcel on the map.</div></section>
+  </aside>
+  <main id="map" aria-label="Interactive Haliyal parcel map"></main>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>
